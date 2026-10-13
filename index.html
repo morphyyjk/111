@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-box">
+
+        <h1>Регистрация</h1>
+
+        <form>
+
+            <label>Имя и фамилия</label>
+            <input type="text" name="name" placeholder="Булинг Артём">
+
+            <label>Электронная почта</label>
+            <input type="email" name="email" required placeholder="123456789@gmail.com">
+
+            <label>Телефон</label>
+            <input type="tel" name="phone" placeholder="+77776229930">
+
+            <label>Пароль</label>
+            <input type="password" name="password" minlength="8" required placeholder="**********">
+
+            <p class="small-text">Минимум 8 символов</p>
+
+            <label>Город</label>
+            <select name="city">
+                <option disabled selected>Выберите город</option>
+                <option>Алматы</option>
+                <option>Астана</option>
+                <option>Актау</option>
+            </select>
+
+        <footer>
+
+            <label>Уровень подготовки</label>
+
+            <div class="radio">
+                <input type="radio" name="level" value="zero">
+                <span>С нуля</span>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="level" value="basic">
+                <span>Знаю основы</span>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="level" value="experience">
+                <span>Есть опыт</span>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" name="agree">
+                <span>Согласен с условиями обучения</span>
+            </div>
+
+            <button type="submit">Зарегистрироваться</button>
+
+        </footer>
+
+        </form>
+    </div>
+</body>
+</html>
